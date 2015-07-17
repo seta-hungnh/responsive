@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* Reset CSS */
+* { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+body { line-height: 1; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+ul { list-style: none; padding: 0; margin: 0; }
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after { content: none; }
+
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+/* Define fonts */
+@font-face { font-family: "SourceSansPro"; src: url(../font/SourceSansPro-ExtraLight.otf); }
+@font-face { font-family: "icon"; src: url("../font/ancestry.eot?#iefix") format("embedded-opentype"), url("../font/ancestry.woff") format("woff"), url("../font/ancestry.ttf") format("truetype"), url("../font/ancestry.svg#icon") format("svg"); }
+.icon::before, .iconAfter::after { font: normal 107%/0 "icon"; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; position: relative; speak: none; text-transform: none; top: 0.075em; }
+
+.icon::before { margin-right: .25em; }
+
+.icon:empty::before { margin-right: 0; }
+
+.iconAfter::after { margin-left: .25em; }
+
+/* Variables */
+/* Clear float */
+.clearfix:after, .widgetContent:after { content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; }
+
+.clearfix, .widgetContent { display: block; }
+
+html[xmlns] .clearfix, html[xmlns] .widgetContent { display: block; }
+
+* html .clearfix, * html .widgetContent { height: 1%; }
+
+/* Layout */
+a { text-decoration: none; color: #9cbe30; }
+a:hover, a:focus { outline: none; }
+
+p { margin: 0; }
+
+h1, h2, h3, h4, h5, h6 { margin-bottom: 0; margin-top: 0; line-height: 100%; font-weight: normal; }
+
+ul { list-style: none; padding-left: 0; margin-bottom: 0; }
+
+img { max-width: 100%; display: block; }
+
+.wrapper { max-width: 990px; margin: 0 auto; }
+
+.w100 { width: 100%; }
+
+.w50 { width: 50%; }
+
+.w33 { width: 33%; }
+
+.colLeft { float: left; }
+
+.colRight { float: right; }
+
+body { color: #54524f; font-size: 18px; font-family: "SourceSansPro", "Helvetica Neue", Arial, sans-serif; font-weight: 300; line-height: 150%; background: #f0eee9; letter-spacing: 1px; }
+body .title01 { color: #54524f; font-size: 200%; text-align: center; }
+body .title02 { color: #7a9c0f; font-size: 200%; font-weight: 300; line-height: 1.35; margin: 20px 0 13px 0; }
+body .title03 { font-size: 110%; text-transform: uppercase; }
+body .icon { display: block; background-color: #9cbe30; border-radius: 50%; color: #fff; font-size: 120%; line-height: 56px; margin: 0 auto; position: relative; text-align: center; width: 56px; height: 56px; z-index: 2; }
+body .icon:before, body .icon:after { font: normal 107%/0 "icon"; -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; position: relative; speak: none; text-transform: none; top: .075em; }
+body .icon.iconsearch:before { content: ""; }
+body .icon.iconleaf:before { content: ""; }
+body .icon.iconnote:before { content: ""; }
+body .icon.icontree:before { content: ""; }
+body .icon.iconpeople:before { content: ""; }
+body .header .wrapper .logo { margin: 9px 0 16px 10px; }
+body .header .wrapper .logo a { display: block; }
+body .header .wrapper .logo a img { width: 158px; height: 28px; }
+body .work { position: relative; padding: 0 0 145px 0; font-weight: 300; font-style: normal; }
+body .work p { font-size: 150%; line-height: 145%; }
+body .work:before { border-left: 3px solid #dedcd6; bottom: 0; content: ""; left: 50%; margin-left: 0; position: absolute; top: 90px; z-index: 1; box-sizing: inherit; }
+body .work .title01 { font-size: 220%; margin: 27px 0 26px 0; }
+body .work .row { position: relative; }
+body .work .row .sprite img { margin: 0 auto; }
+body .work .row .sprite.familyTree { padding: 0 0 0 20px; }
+body .work .row .sprite.ancestors { padding: 0 0 0 20px; }
+body .work .row .familynote { padding: 0 0 0 60px; }
+body .work .row .signaturenote { padding: 0 0 0 45px; }
+body .work .row .ancestornote { padding: 0 0 0 60px; }
+body .start { padding: 26px 0 23px 0; background: #fff; }
+body .start .title01 { margin: 28px 0 23px 0; line-height: 110%; }
+body .start .colLeft .icon { margin-bottom: 25px; }
+body .start .colLeft .title03 { margin: 0 0 14px 0; padding: 0 40px 0 0; }
+body .start .colLeft p { padding: 0 40px 0 0; font-size: 85%; }
+body .help { background-color: #36322d; padding: 18px 20px 42px 0; text-align: center; color: #fff; }
+body .help .helpinfo { display: inline-block; }
+body .help .helpinfo:before { content: ""; font-size: 43px; top: 50px; left: -110px; -webkit-font-smoothing: antialiased; position: relative; speak: none; text-transform: none; font: normal 240%/0 "icon"; }
+body .help .helpinfo .helptxt { margin: 3px 0 0 72px; }
+body .help .helpinfo .helpour { margin: 0 0 0 96px; font-size: 18px; line-height: 130%; letter-spacing: -1px; font-family: "Helvetica Neue", Arial, sans-serif; }
+body .help .helpinfo .helpour a { font-size: 85%; }
+body .help .helpinfo .helpour a:hover { text-decoration: underline; }
+body .footer { font-size: 60%; text-align: center; }
+body .footer .wrapper { text-align: center; }
+body .footer .wrapper .copyright { display: inline-block; margin: 23px 0 20px 0; letter-spacing: 0px; }
+body .footer .wrapper .copyright li { float: left; }
+body .footer .wrapper .copyright li > span { color: #333; }
+body .footer .wrapper .copyright li:before { content: '·'; font-weight: bold; margin: 0 4px; }
+body .footer .wrapper .copyright li:first-child:before { content: " "; }
+body .footer .wrapper .copyright li a { color: #445708; }
+body .footer .wrapper .copyright li a:hover, body .footer .wrapper .copyright li a:focus { color: #1b88b0; text-decoration: underline; }
+body .footer .wrapper .copyright li .new { -webkit-appearance: none; background-color: #64afca; background-origin: padding-box; border: 0; border-radius: 15px; color: white !important; display: inline-block; font-family: inherit; -webkit-font-smoothing: antialiased; font-style: normal; font-weight: bold; height: 15px; line-height: 15px; padding: 0 5px; position: relative; text-align: center; text-decoration: none !important; text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); text-transform: uppercase; top: -.125em; vertical-align: middle; }
+
+/* Landscape phones and down */
+@media (max-width: 989px) { body .work { padding: 0 0 20px 0; }
+  body .work:before { border: 0; }
+  body .work .wrapper .row { padding: 0 90px; }
+  body .work .wrapper .row .colLeft, body .work .wrapper .row .colRight { width: 100%; }
+  body .work .wrapper .row .colLeft.sprite.signatures, body .work .wrapper .row .colRight.sprite.signatures { float: right; position: relative; margin: 0 0 40px 0; background-position: 50% 0; display: none; }
+  body .work .wrapper .row .colLeft.sprite.signatures01, body .work .wrapper .row .colRight.sprite.signatures01 { display: block; }
+  body .work .wrapper .row .colLeft.note, body .work .wrapper .row .colRight.note { padding: 0; }
+  body .work .wrapper .row .colLeft.note.signaturenote, body .work .wrapper .row .colRight.note.signaturenote { float: left; position: relative; }
+  body .start { padding: 0 20px 20px; }
+  body .start .wrapper .innerwrap .colLeft { width: 100%; }
+  body .start .wrapper .innerwrap .colLeft p { padding: 0; } }
+/* Landscape phones and down */
+@media (max-width: 767px) { .col { width: 100%; }
+  body .work:before { border: 0; }
+  body .work .wrapper .row { padding: 0 20px; }
+  body .start { padding: 48px 18px 25px; } }
+/* Landscape phones and down */
+@media (max-width: 480px) { body .work .title01 { font-size: 165%; }
+  body .work .title02 { font-size: 140%; }
+  body .work p { font-size: 120%; }
+  body .work .wrapper .row .note { padding: 0 !important; } }
