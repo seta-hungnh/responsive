@@ -89,6 +89,11 @@ body .icon.iconpeople:before { content: ""; }
 body .header .wrapper .logo { margin: 9px 0 16px 10px; }
 body .header .wrapper .logo a { display: block; }
 body .header .wrapper .logo a img { width: 158px; height: 28px; }
+body .banner .wrapper { position: relative; color: #fff; }
+body .banner .wrapper .titleslide { font-size: 52px; top: 224px; left: 37px; position: absolute; line-height: 118%; }
+body .banner .wrapper .txtslide { font-size: 20px; top: 357px; left: 37px; position: absolute; line-height: 130%; }
+body .banner .wrapper .startlink { color: #fff; position: absolute; display: block; padding: 10px 50px; border-radius: 3px; top: 380px; right: 70px; font-size: 80%; font-weight: bold; text-shadow: 0 0 2px #000; text-transform: uppercase; background-color: #9cbe30; background-image: -webkit-linear-gradient(#b8d94c, #9cbe30); box-shadow: inset 0 -1px 1px rgba(0, 0, 0, 0.2); }
+body .banner .wrapper .startlink:hover { background-color: #7a9c0f; background-image: -webkit-linear-gradient(#9cbe30, #7a9c0f); background-image: linear-gradient(#9cbe30, #7a9c0f); }
 body .work { position: relative; padding: 0 0 145px 0; font-weight: 300; font-style: normal; }
 body .work p { font-size: 150%; line-height: 145%; }
 body .work:before { border-left: 3px solid #dedcd6; bottom: 0; content: ""; left: 50%; margin-left: 0; position: absolute; top: 90px; z-index: 1; box-sizing: inherit; }
@@ -96,15 +101,17 @@ body .work .title01 { font-size: 220%; margin: 27px 0 26px 0; }
 body .work .row { position: relative; }
 body .work .row .sprite img { margin: 0 auto; }
 body .work .row .sprite.familyTree { padding: 0 0 0 20px; }
+body .work .row .sprite.signatures01 { display: none; }
 body .work .row .sprite.ancestors { padding: 0 0 0 20px; }
 body .work .row .familynote { padding: 0 0 0 60px; }
 body .work .row .signaturenote { padding: 0 0 0 45px; }
 body .work .row .ancestornote { padding: 0 0 0 60px; }
 body .start { padding: 26px 0 23px 0; background: #fff; }
 body .start .title01 { margin: 28px 0 23px 0; line-height: 110%; }
+body .start .colLeft { padding: 0 0 0 20px; }
 body .start .colLeft .icon { margin-bottom: 25px; }
 body .start .colLeft .title03 { margin: 0 0 14px 0; padding: 0 40px 0 0; }
-body .start .colLeft p { padding: 0 40px 0 0; font-size: 85%; }
+body .start .colLeft p { font-size: 85%; }
 body .help { background-color: #36322d; padding: 18px 20px 42px 0; text-align: center; color: #fff; }
 body .help .helpinfo { display: inline-block; }
 body .help .helpinfo:before { content: ""; font-size: 43px; top: 50px; left: -110px; -webkit-font-smoothing: antialiased; position: relative; speak: none; text-transform: none; font: normal 240%/0 "icon"; }
@@ -124,7 +131,10 @@ body .footer .wrapper .copyright li a:hover, body .footer .wrapper .copyright li
 body .footer .wrapper .copyright li .new { -webkit-appearance: none; background-color: #64afca; background-origin: padding-box; border: 0; border-radius: 15px; color: white !important; display: inline-block; font-family: inherit; -webkit-font-smoothing: antialiased; font-style: normal; font-weight: bold; height: 15px; line-height: 15px; padding: 0 5px; position: relative; text-align: center; text-decoration: none !important; text-shadow: 0 0 3px rgba(0, 0, 0, 0.3); text-transform: uppercase; top: -.125em; vertical-align: middle; }
 
 /* Landscape phones and down */
-@media (max-width: 989px) { body .work { padding: 0 0 20px 0; }
+@media (max-width: 989px) { body .banner .wrapper .titleslide { top: 60px; font-size: 200%; }
+  body .banner .wrapper .txtslide { top: 160px; font-size: 100%; }
+  body .banner .wrapper .startlink { top: 250px; }
+  body .work { padding: 0 0 20px 0; }
   body .work:before { border: 0; }
   body .work .wrapper .row { padding: 0 90px; }
   body .work .wrapper .row .colLeft, body .work .wrapper .row .colRight { width: 100%; }
@@ -137,11 +147,17 @@ body .footer .wrapper .copyright li .new { -webkit-appearance: none; background-
   body .start .wrapper .innerwrap .colLeft p { padding: 0; } }
 /* Landscape phones and down */
 @media (max-width: 767px) { .col { width: 100%; }
+  body .banner .wrapper .titleslide { top: 20px; font-size: 200%; }
+  body .banner .wrapper .txtslide { top: 110px; font-size: 100%; }
+  body .banner .wrapper .startlink { top: 160px; }
   body .work:before { border: 0; }
   body .work .wrapper .row { padding: 0 20px; }
   body .start { padding: 48px 18px 25px; } }
 /* Landscape phones and down */
-@media (max-width: 480px) { body .work .title01 { font-size: 165%; }
+@media (max-width: 480px) { body .banner .wrapper .titleslide { display: none; }
+  body .banner .wrapper .txtslide { display: none; }
+  body .banner .wrapper .startlink { top: 50px; }
+  body .work .title01 { font-size: 165%; }
   body .work .title02 { font-size: 140%; }
   body .work p { font-size: 120%; }
   body .work .wrapper .row .note { padding: 0 !important; } }
