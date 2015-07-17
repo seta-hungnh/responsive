@@ -154,9 +154,10 @@ body .footer .wrapper .copyright li .new { -webkit-appearance: none; background-
   body .work .wrapper .row { padding: 0 20px; }
   body .start { padding: 48px 18px 25px; } }
 /* Landscape phones and down */
-@media (max-width: 480px) { body .banner .wrapper .titleslide { display: none; }
-  body .banner .wrapper .txtslide { display: none; }
-  body .banner .wrapper .startlink { top: 50px; }
+@media (max-width: 480px) { body .banner .wrapper .titleslide { font-size: 17px; top: 10px; }
+  body .banner .wrapper .txtslide { top: 50px; font-size: 12px; }
+  body .banner .wrapper .startlink { top: 180px; }
+  body .work { margin: 100px 0 0 0; }
   body .work .title01 { font-size: 165%; }
   body .work .title02 { font-size: 140%; }
   body .work p { font-size: 120%; }
