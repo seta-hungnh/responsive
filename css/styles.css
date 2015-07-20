@@ -75,6 +75,8 @@ img { max-width: 100%; display: block; }
 
 .colRight { float: right; }
 
+.template-image {height: 256px; }
+
 body { color: #54524f; font-size: 18px; font-family: "SourceSansPro", "Helvetica Neue", Arial, sans-serif; font-weight: 300; line-height: 150%; background: #f0eee9; letter-spacing: 1px; }
 body .title01 { color: #54524f; font-size: 200%; text-align: center; }
 body .title02 { color: #7a9c0f; font-size: 200%; font-weight: 300; line-height: 1.35; margin: 20px 0 13px 0; }
